@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+   
+   
+</head>
+<body>
+
+    <div class="container">
+        <h2 class="title">Text Generator</h2>
+      
+        <button id='copy1' class='C_box_main' onclick="copyC('copy1','result')">
+            <i class='CBox_icn'></i>
+          </button>
+
+        <div  class="result"> 
+
+            <textarea class="result__viewbox" id="result" type="text" disabled>CLICK GENERATE</textarea>         
+        </div>
+                <h2 class="range">Range Slider</h2>
+            <div class="slidcontainer">
+                    <input type="range" min="50" max="2000" value="300" class="slider" id="myRange">
+                <p class="word" >Word:<span id="range"></span> </p>
+            </div>
+        <button class="btn generate" id="generate" onclick="document.getElementById('result').innerHTML=randomSentence()">Generate</button>
+    </div>
+
+
+    <script type="text/javascript" src="/script.js"></script>
+    
+      
+ <div id='toastNotif' class='tNtf'></div> 
+        
+          <script>
+
+    </script>
+    
+</body>
+</html>
